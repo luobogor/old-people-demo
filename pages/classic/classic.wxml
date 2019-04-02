@@ -1,2 +1,13 @@
-<!--pages/classic/classic.wxml-->
-<text>pages/classic/classic.wxml</text>
+<view class="container">
+  <view class="header">
+    <view class="like-container">
+      I am classic page
+      <like-cmp
+        class="like"
+        bind:like="onLike"
+        like="{{like}}"
+        count="{{count}}"
+      />
+    </view>
+  </view>
+</view>

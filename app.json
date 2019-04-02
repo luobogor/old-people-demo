@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/classic",
     "pages/classic/classic"
   ],
   "window":{
