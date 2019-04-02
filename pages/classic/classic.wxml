@@ -6,8 +6,15 @@
         class="like"
         bind:like="onLike"
         like="{{like}}"
-        count="{{count}}"
-      />
+        count="{{count}}"/>
+      <img-btn-cmp
+        class="share-btn"
+        open-type="share">
+        <image
+          class="share"
+          slot="img"
+          src="/images/icon/share.png" />
+      </img-btn-cmp>
     </view>
   </view>
 </view>
