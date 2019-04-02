@@ -7,8 +7,8 @@ Component({
   },
 
   data: {
-    yes_url: 'images/like.png',
-    no_url: 'images/like@dis.png'
+    yesUrl: 'images/like.png',
+    noUrl: 'images/like@dis.png'
   },
 
   methods: {

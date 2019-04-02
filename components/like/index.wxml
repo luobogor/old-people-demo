@@ -1,1 +1,6 @@
-<text>I am like component</text>
+<view
+  class="container"
+  bind:tap="onLike">
+  <image src="{{ like ? yesUrl : noUrl }}"/>
+  <text>{{ count }}</text>
+</view>
