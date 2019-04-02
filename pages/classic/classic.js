@@ -15,6 +15,7 @@ Page({
 
   },
   onLike(event) {
-    console.log('click like:', event);
+    const likeOrCancel = event.detail.behavior;
+
   }
 });

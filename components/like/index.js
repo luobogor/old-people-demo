@@ -1,4 +1,7 @@
-// components/like/index.js
+import { LikeModel } from '../../models/like.js';
+
+const likeModel = new LikeModel();
+
 Component({
   properties: {
     like: Boolean,
@@ -16,8 +19,8 @@ Component({
       if (this.properties.readOnly) {
         return;
       }
-      let count = this.properties.count;
-      count = this.properties.count;
+      let { count } = this.properties;
+      count = this.properties.like ? count - 1 : count + 1;
       this.setData({
         count,
         like: !this.properties.like,
